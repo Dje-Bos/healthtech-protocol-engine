@@ -15,7 +15,8 @@ public interface MeasurementMapper {
             @Mapping(target = "unit"),
             @Mapping(target = "type"),
             @Mapping(target = "value"),
-            @Mapping(target = "created")
+            @Mapping(target = "created"),
+            @Mapping(target = "uid", ignore = true)
     })
     Measurement toProtocolMeasurement(MeasurementDto dto);
 }
