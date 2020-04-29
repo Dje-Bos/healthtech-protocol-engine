@@ -20,8 +20,8 @@ jobs:
       with:
         java-version: '11'
 
-    - name: Build with Maven
-      run: mvn clean install
+    - name: Build with Gradle
+      run: gradle clean build
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v1
@@ -29,4 +29,4 @@ jobs:
         app-name: 'protocol-validator'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_81b61260832d40cdb3d5ee745312d40e }}
-        package: '${{ github.workspace }}/target/*.jar'
+        package: '${{ github.workspace }}/build/libs/*.jar'
