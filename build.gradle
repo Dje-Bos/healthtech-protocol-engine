@@ -27,7 +27,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-log4j2'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'de.codecentric:spring-boot-admin-starter-client'
+    implementation "de.codecentric:spring-boot-admin-starter-client:${springBootAdminVersion}"
     implementation "org.mapstruct:mapstruct:${mapstructVersion}"
     implementation 'org.springdoc:springdoc-openapi-ui:1.2.33'
     implementation fileTree(dir: 'libs', include: ['*.jar'])

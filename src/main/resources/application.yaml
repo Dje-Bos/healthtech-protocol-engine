@@ -16,3 +16,7 @@ springdoc:
 logging:
   file:
     name: logs/protocol-validator.log
+
+spring:
+  application:
+    name: HealthTech Protocol Validation Service
