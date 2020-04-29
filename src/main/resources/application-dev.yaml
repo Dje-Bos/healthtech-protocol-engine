@@ -3,3 +3,5 @@ spring:
     admin:
       client:
         url: https://healthtech-admin.azurewebsites.net
+        instance:
+          service-base-url: https://protocol-validator.azurewebsites.net
