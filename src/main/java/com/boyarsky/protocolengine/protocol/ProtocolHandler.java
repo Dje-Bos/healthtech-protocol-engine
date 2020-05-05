@@ -1,4 +1,4 @@
-package com.boyarsky.protocolvalidator.protocol;
+package com.boyarsky.protocolengine.protocol;
 
 import com.boyarsky.lang.runtime.IProtocol;
 import com.boyarsky.lang.runtime.impl.Measurement;

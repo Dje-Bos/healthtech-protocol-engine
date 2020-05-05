@@ -1,9 +1,9 @@
-package com.boyarsky.protocolvalidator.controller;
+package com.boyarsky.protocolengine.controller;
 
 import com.boyarsky.lang.runtime.impl.Measurement;
 import com.boyarsky.lang.runtime.impl.OutputResult;
-import com.boyarsky.protocolvalidator.dto.MeasurementDto;
-import com.boyarsky.protocolvalidator.protocol.ProtocolHandler;
+import com.boyarsky.protocolengine.dto.MeasurementDto;
+import com.boyarsky.protocolengine.protocol.ProtocolHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.boyarsky.protocolvalidator.mapper.MeasurementMapper.MEASUREMENT_MAPPER;
+import static com.boyarsky.protocolengine.mapper.MeasurementMapper.MEASUREMENT_MAPPER;
 
 @RestController
 @RequestMapping("/protocols")

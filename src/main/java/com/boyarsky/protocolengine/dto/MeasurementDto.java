@@ -1,4 +1,4 @@
-package com.boyarsky.protocolvalidator.dto;
+package com.boyarsky.protocolengine.dto;
 
 import lombok.Data;
 

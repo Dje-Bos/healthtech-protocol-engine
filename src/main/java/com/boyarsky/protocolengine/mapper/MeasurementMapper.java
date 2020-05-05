@@ -1,7 +1,7 @@
-package com.boyarsky.protocolvalidator.mapper;
+package com.boyarsky.protocolengine.mapper;
 
 import com.boyarsky.lang.runtime.impl.Measurement;
-import com.boyarsky.protocolvalidator.dto.MeasurementDto;
+import com.boyarsky.protocolengine.dto.MeasurementDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;

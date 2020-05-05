@@ -8,8 +8,8 @@
         </Console>
 
         <RollingFile name="RollingFile"
-                     fileName="./logs/protocol-validator.log"
-                     filePattern="./logs/$${date:yyyy-MM}/protocol-validator%d{-dd-MMMM-yyyy}-%i.log.zip">
+                     fileName="./logs/protocol-engine.log"
+                     filePattern="./logs/$${date:yyyy-MM}/protocol-engine%d{-dd-MMMM-yyyy}-%i.log.zip">
             <PatternLayout>
                 <pattern>%d %p %C{1.} [%t] %m%n</pattern>
             </PatternLayout>
@@ -26,7 +26,7 @@
             <AppenderRef ref="Console"/>
             <AppenderRef ref="RollingFile"/>
         </Root>
-        <Logger level="debug" name="com.boyarsky.protocolvalidator" additivity="false">
+        <Logger level="debug" name="com.boyarsky.protocolengine" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="RollingFile"/>
         </Logger>
