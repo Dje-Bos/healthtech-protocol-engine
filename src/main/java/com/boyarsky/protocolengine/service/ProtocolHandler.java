@@ -1,4 +1,4 @@
-package com.boyarsky.protocolengine.protocol;
+package com.boyarsky.protocolengine.service;
 
 import com.boyarsky.lang.runtime.IProtocol;
 import com.boyarsky.lang.runtime.impl.Measurement;
@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class ProtocolHandler {
     private static final Logger LOG = LoggerFactory.getLogger(ProtocolHandler.class);
 
-    private List<IProtocol> protocols;
+    private final List<IProtocol> protocols;
 
     public ProtocolHandler(List<IProtocol> protocols) {
         this.protocols = protocols;

@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProtocolValidatorApplication {
+public class ProtocolEngineApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProtocolValidatorApplication.class, args);
+		SpringApplication.run(ProtocolEngineApplication.class, args);
 	}
 
 }

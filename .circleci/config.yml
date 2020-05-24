@@ -42,3 +42,13 @@ jobs:
       - run: gradle test
       - store_test_results:
           path: build/test-results/test
+      - run:
+          name: Analyze on SonarCloud
+          command: gradle build sonarqube
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - build:
+          context: SonarCloud-ProtocolEngine

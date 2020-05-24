@@ -1,4 +1,4 @@
-package com.boyarsky.protocolengine.protocol;
+package com.boyarsky.protocolengine.service;
 
 import com.boyarsky.lang.runtime.IProtocol;
 import com.boyarsky.lang.runtime.impl.Measurement;

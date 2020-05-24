@@ -19,4 +19,4 @@ logging:
 
 spring:
   application:
-    name: HealthTech Protocol Validation Service
+    name: HealthTech Protocol Engine

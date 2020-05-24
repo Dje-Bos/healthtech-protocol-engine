@@ -12,8 +12,8 @@ public interface MeasurementMapper {
     MeasurementMapper MEASUREMENT_MAPPER = Mappers.getMapper(MeasurementMapper.class);
 
     @Mappings({
-            @Mapping(target = "unit"),
-            @Mapping(target = "type"),
+            @Mapping(target = "unit", ignore = true),
+            @Mapping(target = "type", expression = "java(com.boyarsky.lang.runtime.impl.MType.valueOf(dto.getType().toUpperCase()))"),
             @Mapping(target = "value"),
             @Mapping(target = "created"),
             @Mapping(target = "uid", ignore = true)
